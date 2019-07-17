@@ -24,7 +24,7 @@ and ...
  **_Be sure to use "sudo" first on the curl and docker-compose commands (i.e. $sudo curl -Ls -o ...)_ in Ubuntu, unless logged in as root**  
 
 9. If the "docker-compose" command is successful NetDisco should be up  
-10. Once installed go to: _<IP_ADD>:9090/system_ for the Cockpit management console, and _<IP_ADD>/#_ for NetDisco (where <IP_ADD> is the IP address for the Ubuntu server)  
+10. Once installed go to: **_<IP_ADD>:9090/system_** for the Cockpit management console, and **_<IP_ADD>/#_** for NetDisco (where <IP_ADD> is the IP address for the Ubuntu server)  
 11. Go to the NetDisco website, then go to the menu **Admin -> User Management**  
 12. Create users / passwords, be sure to click the save button (refresh the page to make sure), and add a password to the guest account (click save again of course, **_do not delete "guest" yet_** )  
 13. Open a connection to the NetDisco server, and edit the deployment.yml file (using nano or vi) located here:  
