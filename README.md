@@ -4,7 +4,7 @@ Clearer instructions on how to load NetDisco on an Ubuntu server
 1. Install an Ubuntu system (vm, kvm, using a live ISO, Virtualbox, etc)
 2. Run `$sudo apt-get update`, `$sudo apt-get upgrade`, `sudo apt-get dist-upgrade` on the Ubuntu system
 3. Reboot the system with `$sudo shutdown -r now`
-4. Install **Cockpit. Cockpit-Docker, Cockpit-ws and Cockpit-packagekit** (using the sudo apt-get install command)
+4. Install **Cockpit, Cockpit-Docker, Cockpit-ws and Cockpit-packagekit** (using the sudo apt-get install command)
 5. If docker is not yet installed, install it (using sudo apt-get install)
 6. Pull / install the latest docker image from https://hub.docker.com/r/netdisco/netdisco  
 `* You May have to look at the tags, for a recent install I needed to use "$sudo docker pull netdisco/netdisco:latest-do`
