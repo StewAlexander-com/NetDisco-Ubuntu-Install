@@ -34,7 +34,7 @@ and ...
 16. From the server command line go to
 `/home/support`
 17. Issue the command `$sudo docker-compose up`, if everything goes well NetDisco should be back up
-18. If NetDisco does not request a login, but instead takes you to the guest account, go to the user name on the right, and select "Log Out"  
+18. If NetDisco does not request a login, but instead takes you to the guest account, go to the user name menu on the right, and select "Log Out"  
 19. Login as one of the accounts that were created in step 12, go to **Admin -> User Management** (as above), and delete the **guest** account
 ## Initial Setup
 - Log in to NetDsico, go to the **Admin** menu and click all of the following one at a time
