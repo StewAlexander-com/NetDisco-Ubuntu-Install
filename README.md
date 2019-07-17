@@ -8,7 +8,7 @@ Clearer instructions on how to load NetDisco on an Ubuntu server
 5. If docker is not yet installed, install it (using sudo apt-get install)
 6. Pull / install the latest docker image from https://hub.docker.com/r/netdisco/netdisco  
 * You May have to look at the tags, for a recent install I needed to use `$sudo docker pull netdisco/netdisco:latest-do`
-7. Download docker-compose using "$sudo apt-get install docker-compose"
+7. Download docker-compose using `$sudo apt-get install docker-compose`
 8. Run commands listed in the NetDisco Dockerhub site: https://hub.docker.com/r/netdisco/netdisco
 ```
 $sudo groupadd netdisco -g 901
