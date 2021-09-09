@@ -10,18 +10,22 @@ Clearer instructions on how to load NetDisco on an Ubuntu server
 * You May have to look at the tags, for a recent install I needed to use `$sudo docker pull netdisco/netdisco:latest-do`
 7. Download docker-compose using `$sudo apt-get install docker-compose`
 8. Run commands listed in the NetDisco Dockerhub site: https://hub.docker.com/r/netdisco/netdisco
+
+```bash
+sudo groupadd netdisco -g 901
+sudo useradd -u 901 -p x -g netdisco netdisco
+mkdir -p netdisco/{logs,config,nd-site-local}
+sudo chown -R netdisco:netdisco netdisco
 ```
-$sudo groupadd netdisco -g 901
-$sudo useradd -u 901 -p x -g netdisco netdisco
-$mkdir -p netdisco/{logs,config,nd-site-local}
-$sudo chown -R netdisco:netdisco netdisco
-```
+
 and ...
+
+```bash
+sudo curl -Ls -o docker-compose.yml https://tinyurl.com/nd2-dockercompose
+docker-compose up  
 ```
- $sudo curl -Ls -o docker-compose.yml https://tinyurl.com/nd2-dockercompose
- $docker-compose up  
- ```
- **_Be sure to use "sudo" first on the curl and docker-compose commands (i.e. $sudo curl -Ls -o ...)_ in Ubuntu, unless logged in as root**  
+
+**_Be sure to use "sudo" first on the curl and docker-compose commands (i.e. sudo curl -Ls -o ...)_ in Ubuntu, unless logged in as root**  
 
 9. If the "docker-compose" command is successful NetDisco should be up  
 10. Once installed go to: **_<IP_ADD>:9090/system_** for the Cockpit management console, and **_<IP_ADD>/#_** for NetDisco (where <IP_ADD> is the IP address for the Ubuntu server)  
